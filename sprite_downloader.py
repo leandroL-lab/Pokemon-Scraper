@@ -20,9 +20,9 @@ for link in pokemonLinks:
     
     pokemonName = link['href'].split('/')[-1]
     
-    # if pokemonName == 'chespin':
-    #     #break on 5th generation because it's the last one with a 2D sprite
-    #     break
+    if pokemonName == 'chespin':
+        #break on 5th generation because it's the last one with a 2D sprite
+        break
     
     pokemonDetailUrl = f'{url}/{pokemonName}'
         
